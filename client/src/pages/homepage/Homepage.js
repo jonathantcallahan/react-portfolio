@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './../../components/header/Header';
+import './Homepage.css';
 
 class Home extends React.Component {
 
@@ -12,7 +14,7 @@ class Home extends React.Component {
     render() {
         return(
             <div>
-                <p>This is the homepage</p>
+                <Header />
             </div>
         )
     };

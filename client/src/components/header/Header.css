@@ -1,0 +1,14 @@
+.header-el {
+    display: inline-block;
+    margin: 10px
+}
+
+#header-name {
+    width:50%;
+    text-align: left;
+}
+
+.header-three {
+    display: inline-block;
+    text-align: center;
+}
