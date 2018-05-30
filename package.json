@@ -1,0 +1,12 @@
+{
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jonathantcallahan/react-portfolio.git",
+  "author": "<jtc7537@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
