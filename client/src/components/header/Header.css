@@ -1,14 +1,44 @@
+.header {
+    margin-top: 10px;
+}
+
 .header-el {
     display: inline-block;
     margin: 10px
 }
 
 #header-name {
-    width:50%;
+    display: inline-block;
+    width:40%;
     text-align: left;
+    margin-left: 5%;
+    margin-right: 0px
 }
 
 .header-three {
+    width:40%;
     display: inline-block;
-    text-align: center;
+    text-align: right;
+}
+
+#veggieburger {
+    display: none;
+}
+
+.line {
+    width:15px;
+    background-color: black;
+    height:2px;
+    margin-top:3px;
+    border-radius: 2px
+}
+
+@media only screen and (max-width: 600px) {
+    .header-el {
+        display: none;
+    }
+
+    #veggieburger {
+        display: inline-block;
+    }
 }
