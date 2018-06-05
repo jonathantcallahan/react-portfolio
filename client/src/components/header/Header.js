@@ -5,12 +5,12 @@ class Header extends React.Component {
     constructor() {
         super();
         this.state = {
-
+            menu: 'sidemenuhidden'
         };
     };
 
     toggleHeader = () => {
-
+        this.state.menu === 'sidemenuhidden' ? this.setState({ menu:'sidemenu'} ) : this.setState({ menu:'sidemenuhidden' })
     };
 
     render() {
@@ -24,11 +24,14 @@ class Header extends React.Component {
                     <div className='header-el'>PROJECTS</div>
                     <div className='header-el'>ABOUT ME</div>
                     
-                    <div id='veggieburger'>
+                    <div id='veggieburger' onClick={() => this.toggleHeader()}>
                         <div className='line'></div>
                         <div className='line'></div>
                         <div className='line'></div>
-                    </div>    
+                    </div>
+                </div>
+                <div id='smu' className={this.state.menu}>
+                    <div id='menuhead'>MENU</div>
                 </div>
             </div>
         )
