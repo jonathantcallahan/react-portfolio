@@ -5,18 +5,19 @@ class Header extends React.Component {
     constructor() {
         super();
         this.state = {
-            menu: 'sidemenuhidden'
+            menu: 'sidemenuhidden',
+            header: 'header'
         };
     };
 
     toggleHeader = () => {
-        this.state.menu === 'sidemenuhidden' ? this.setState({ menu:'sidemenu'} ) : this.setState({ menu:'sidemenuhidden' })
+        this.state.menu === 'sidemenuhidden' ? this.setState({ menu:'sidemenu', header:'headercol'} ) : this.setState({ menu:'sidemenuhidden', header:'header' })
     };
 
     render() {
         return(
             <div>
-                <div className='header'>
+                <div className={this.state.header}>
                     <div id='header-name'>
                         JONATHAN
                     </div>

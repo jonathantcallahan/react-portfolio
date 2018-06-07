@@ -15,7 +15,9 @@ class Home extends React.Component {
         return(
             <div>
                 <Header />
-            </div>
+                <div className='fullpage red'>
+                </div>
+                </div>
         )
     };
 };
