@@ -1,15 +1,17 @@
 * {
     box-sizing: border-box;
+    color: white;
+    font-weight: 400
 }
 
 .header {
-    margin-top: 10px;
     width:100%;
     vertical-align: top;
     position:fixed;
     left:0;
     top:0;
     z-index: 1000;
+    background-color: rgb(175, 201, 225, .2)
 }
 
 .headercol {
