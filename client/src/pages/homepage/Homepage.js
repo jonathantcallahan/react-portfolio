@@ -16,21 +16,26 @@ class Home extends React.Component {
         return(
             <div>
                 <Header />
+                    <div id='scrolltext'>scroll</div>
                     <ParallaxBanner
                         className="your-class"
                         layers={[
                             {
                                 image: 'https://bonexpose.com/wp-content/uploads/2015/06/Contact-Us.jpg',
-                                amount: 0.2,
+                                amount: 1,
+                                slowerScrollRate: true,
+                            },{
+                                image: 'https://immediateentourage.com/ie2/wp-content/uploads/2016/07/IE-tree-cutout.png',
+                                amount: .5,
                                 slowerScrollRate: true,
                             },{
                                 image: 'http://www.macosxtips.co.uk/geeklets/modules/upload/attachments/cutout.png',
-                                amount: 0.5,
-                                slowerScrollRate: false,
+                                amount: .1,
+                                slowerScrollRate: true,
                             },
                         ]}
                         style={{
-                            height: '100vh',
+                            height: '100vh'
                         }}
                     >
                         <h1>Banner Children</h1>

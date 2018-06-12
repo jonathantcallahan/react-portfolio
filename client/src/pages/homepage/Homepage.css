@@ -8,6 +8,13 @@ h1 {
     margin: 0
 }
 
+#scrolltext {
+    margin-top:50vh;
+    margin-left:45vw;
+    position: absolute;
+    z-index: 1000000;
+}
+
 .fullpage {
     padding: 20px;
     font-family: 'Inconsolate' monospace;
