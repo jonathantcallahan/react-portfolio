@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0
+}
+
 .fullpage {
+    padding: 20px;
+    font-family: 'Inconsolate' monospace;
     height:100vh;
-    width:100%
+    width:100%;
+    background-color: rgb(41, 41, 41)
 }
 
 .red {

@@ -6,13 +6,20 @@ class Header extends React.Component {
         super();
         this.state = {
             menu: 'sidemenuhidden',
-            header: 'header'
+            header: 'header',
+            rotate: false
         };
     };
 
     toggleHeader = () => {
-        this.state.menu === 'sidemenuhidden' ? this.setState({ menu:'sidemenu', header:'headercol'} ) : this.setState({ menu:'sidemenuhidden', header:'header' })
-    };
+        if(this.state.menu === 'sidemenuhidden'){
+            this.setState({ menu:'sidemenu', header:'headercol', rotate:'true'})
+        } else {    
+            this.setState({ menu:'sidemenuhidden', header:'header'})
+        }
+};
+
+    
 
     render() {
         return(
@@ -27,9 +34,9 @@ class Header extends React.Component {
                         <div className='header-el'>ABOUT ME</div>
                         
                         <div id='veggieburger' onClick={() => this.toggleHeader()}>
-                            <div className='line'></div>
-                            <div className='line'></div>
-                            <div className='line'></div>
+                            <div id='line1' className={this.state.rotate == 'true' ? 'rotateR' : 'line'}></div>
+                            <div id='line2' className='line'></div>
+                            <div id='line3' className='line'></div>
                         </div>
                     </div>
                 </div>

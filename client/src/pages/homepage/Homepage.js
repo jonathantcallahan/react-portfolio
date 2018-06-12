@@ -35,7 +35,10 @@ class Home extends React.Component {
                     >
                         <h1>Banner Children</h1>
                     </ParallaxBanner>
-                <div className='fullpage'></div>
+                <div className='fullpage'>
+                        <h1>Hello, my name is Jonathan</h1>
+                        <p>I am a full stack developer and search engine marketing expert. This site is build with React - If you want to see how I did anything, it's all up on my Github. </p>
+                </div>
                 </div>
         )
     };
