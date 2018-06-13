@@ -2,12 +2,11 @@ import React from 'react';
 import Header from './../../components/header/Header';
 import './Homepage.css';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+
+configureAnchors({offset: -45, scrollDuration: 1000});
 
 class Home extends React.Component {
-
-
-    scrollTo
 
     constructor() {
         super();
@@ -23,7 +22,7 @@ class Home extends React.Component {
                 <Header />
             </ScrollableAnchor>
                     <div id='scrolltext'>scroll</div>
-                                            <ParallaxBanner
+                        <ParallaxBanner
                             className="your-class"
                             layers={[
                                 {
@@ -51,6 +50,25 @@ class Home extends React.Component {
                     <div className='fullpage'>
                         <h1>Hello, my name is Jonathan</h1>
                         <p>I am a full stack developer and search engine marketing expert. This site is build with React - If you want to see how I did anything, it's all up on my Github. </p>
+                        <ParallaxBanner
+                            className="your-class"
+                            offsetYMax='0px'
+                            layers={[
+                                {
+                                    image: 'https://i.imgur.com/MZWr5LZ.jpg',
+                                    amount: .5,
+                                    slowerScrollRate: false,
+                                }
+                            ]}
+                            style={{
+                                width: '150px',
+                                height: '150px',
+                                borderRadius: '50%'
+                            }}
+                            >
+                            <h1>Banner Children</h1>
+                        </ParallaxBanner>
+
                     </div>
                 </ScrollableAnchor>
                 
