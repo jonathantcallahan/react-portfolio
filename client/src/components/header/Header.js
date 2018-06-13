@@ -29,8 +29,8 @@ class Header extends React.Component {
                         <a href='#section1'>JONATHAN</a>
                     </div>
                     <div className='header-three'>
-                        <div className='header-el'>CONTACT</div>
-                        <div className='header-el'>PROJECTS</div>
+                        <div className='header-el'><a href='#section4'>CONTACT</a></div>
+                        <div className='header-el'><a href='#section3'>PROJECTS</a></div>
                         <div className='header-el'><a href='#section2'>ABOUT ME</a></div>
                         
                         <div id='veggieburger' onClick={() => this.toggleHeader()}>
@@ -42,9 +42,9 @@ class Header extends React.Component {
                 </div>
                 <div id='smu' className={this.state.menu}>
                     <div id='menuhead'>MENU</div>
-                    <div className='sideitem'>CONTACT</div>
-                    <div className='sideitem'>PROJECTS</div>
-                    <div className='sideitem'>ABOUT ME</div>
+                    <div className='sideitem'><a href='#section4'>CONTACT</a></div>
+                    <div className='sideitem'><a href='#section3'>PROJECTS</a></div>
+                    <div className='sideitem'><a href='#section2'>ABOUT ME</a></div>
                 </div>
             </div>
         )

@@ -8,6 +8,20 @@ h1 {
     margin: 0
 }
 
+.hl {
+    background-color: rgb(107, 107, 107);
+    border-radius: 3px;
+    padding: 1px 3px;
+
+}
+
+.avatar {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top
+}
+
 #scrolltext {
     margin-top:50vh;
     margin-left:45vw;
@@ -25,4 +39,15 @@ h1 {
 
 .red {
     background-color: azure
+}
+
+
+.helloCont {
+    display: inline-block;
+    width: 70%;
+}
+
+.lightgray {
+    background-color: rgb(213, 213, 213);
+    color: rgb(41, 41, 41)
 }
