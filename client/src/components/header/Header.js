@@ -26,12 +26,12 @@ class Header extends React.Component {
             <div>
                 <div className={this.state.header}>
                     <div id='header-name'>
-                        JONATHAN
+                        <a href='#section1'>JONATHAN</a>
                     </div>
                     <div className='header-three'>
                         <div className='header-el'>CONTACT</div>
                         <div className='header-el'>PROJECTS</div>
-                        <div className='header-el'>ABOUT ME</div>
+                        <div className='header-el'><a href='#section2'>ABOUT ME</a></div>
                         
                         <div id='veggieburger' onClick={() => this.toggleHeader()}>
                             <div id='line1' className={this.state.rotate == 'true' ? 'rotateR' : 'line'}></div>
