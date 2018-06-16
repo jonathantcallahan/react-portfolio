@@ -43,7 +43,6 @@ class Home extends React.Component {
                                 height: '100vh'
                             }}
                             >
-                            <h1>Banner Children</h1>
                         </ParallaxBanner>
                     
                 <ScrollableAnchor id={'section2'}>
